@@ -1,0 +1,166 @@
+{
+ "quelle": "calovo-Kalender",
+ "stand": "2026-11-12",
+ "spiele": [
+  {
+   "opp": "SV Waldhof Mannheim",
+   "comp": "3. Liga",
+   "start": "2026-08-16",
+   "end": null,
+   "time": "13:30",
+   "confirmed": true
+  },
+  {
+   "opp": "VfB Stuttgart",
+   "comp": "DFB-Pokal",
+   "start": "2026-08-21",
+   "end": null,
+   "time": "20:45",
+   "confirmed": true
+  },
+  {
+   "opp": "SV Wehen Wiesbaden",
+   "comp": "3. Liga",
+   "start": "2026-09-05",
+   "end": null,
+   "time": "14:00",
+   "confirmed": true
+  },
+  {
+   "opp": "VfB Stuttgart II",
+   "comp": "3. Liga",
+   "start": "2026-09-16",
+   "end": null,
+   "time": "19:00",
+   "confirmed": true
+  },
+  {
+   "opp": "SV Meppen",
+   "comp": "3. Liga",
+   "start": "2026-10-13",
+   "end": null,
+   "time": "19:00",
+   "confirmed": true
+  },
+  {
+   "opp": "Fortuna Düsseldorf",
+   "comp": "3. Liga",
+   "start": "2026-10-24",
+   "end": null,
+   "time": "14:00",
+   "confirmed": true
+  },
+  {
+   "opp": "SG Sonnenhof Großaspach",
+   "comp": "3. Liga",
+   "start": "2026-11-07",
+   "end": null,
+   "time": "14:00",
+   "confirmed": true
+  },
+  {
+   "opp": "TSV Havelse",
+   "comp": "3. Liga",
+   "start": "2026-11-27",
+   "end": null,
+   "time": "19:00",
+   "confirmed": true
+  },
+  {
+   "opp": "SC Verl",
+   "comp": "3. Liga",
+   "start": "2026-12-13",
+   "end": null,
+   "time": "19:30",
+   "confirmed": true
+  },
+  {
+   "opp": "SC Preußen Münster",
+   "comp": "3. Liga",
+   "start": "2026-12-19",
+   "end": null,
+   "time": "14:00",
+   "confirmed": true
+  },
+  {
+   "opp": "TSG Hoffenheim II",
+   "comp": "3. Liga",
+   "start": "2027-01-23",
+   "end": null,
+   "time": "16:30",
+   "confirmed": true
+  },
+  {
+   "opp": "1. FC Saarbrücken",
+   "comp": "3. Liga",
+   "start": "2027-02-05",
+   "end": "2027-02-07",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "FC Viktoria Köln",
+   "comp": "3. Liga",
+   "start": "2027-02-19",
+   "end": "2027-02-21",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "Rot-Weiss Essen",
+   "comp": "3. Liga",
+   "start": "2027-03-02",
+   "end": "2027-03-03",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "FC Würzburger Kickers",
+   "comp": "3. Liga",
+   "start": "2027-03-05",
+   "end": "2027-03-07",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "Alemannia Aachen",
+   "comp": "3. Liga",
+   "start": "2027-03-16",
+   "end": "2027-03-17",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "SSV Jahn Regensburg",
+   "comp": "3. Liga",
+   "start": "2027-04-02",
+   "end": "2027-04-04",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "MSV Duisburg",
+   "comp": "3. Liga",
+   "start": "2027-04-16",
+   "end": "2027-04-18",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "Fortuna Köln",
+   "comp": "3. Liga",
+   "start": "2027-04-27",
+   "end": "2027-04-28",
+   "time": null,
+   "confirmed": false
+  },
+  {
+   "opp": "FC Ingolstadt 04",
+   "comp": "3. Liga",
+   "start": "2027-05-22",
+   "end": null,
+   "time": null,
+   "confirmed": false
+  }
+ ]
+}
