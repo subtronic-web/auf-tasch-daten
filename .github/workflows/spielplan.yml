@@ -1,0 +1,25 @@
+name: Spielplan aktualisieren
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kalender abholen und spielplan.json bauen
+        env:
+          CAL_URL: ${{ secrets.CAL_URL }}
+        run: python3 scripts/build_spielplan.py "$CAL_URL" spielplan.json
+      - name: Änderung speichern
+        run: |
+          if [ -n "$(git status --porcelain spielplan.json)" ]; then
+            git config user.name "spielplan-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add spielplan.json
+            git commit -m "Spielplan aktualisiert"
+            git push
+          fi
