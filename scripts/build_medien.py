@@ -333,6 +333,84 @@ def shop():
                 slot(g)["shop"] = ev.get("url")
 
 
+# ---------------------------------------------------------------- FotMob: Karten, Schiri, Zuschauer, Aufstellung
+FOTMOB_LIGEN = (208, 209)  # 3. Liga, DFB-Pokal
+
+
+def fotmob_min(e):
+    t = e.get("time")
+    o = e.get("overloadTime")
+    return f"{t}.+{o}" if o else f"{t}."
+
+
+def fotmob_aufstellung(md):
+    team = (md.get("content", {}).get("lineup") or {}).get("homeTeam") or {}
+    st = team.get("starters") or []
+    if not st:
+        return ""
+    raus = {}
+    for e in (md["content"].get("matchFacts", {}).get("events", {}) or {}).get("events", []):
+        if e.get("type") == "Substitution" and e.get("isHome") and len(e.get("swap") or []) == 2:
+            rein, aus = e["swap"][0].get("name", ""), e["swap"][1].get("name", "")
+            raus[aus] = f"{e.get('time')}. {rein.split()[-1] if rein else ''}".strip()
+    reihen = {}
+    for p in st:
+        y = round(((p.get("verticalLayout") or {}).get("y") or 0), 2)
+        reihen.setdefault(y, []).append(p)
+    teile = []
+    for y in sorted(reihen):
+        namen = []
+        for p in sorted(reihen[y], key=lambda p: p.get("positionId") or 0):
+            n = p.get("lastName") or (p.get("name") or "").split()[-1]
+            if p.get("name") in raus:
+                n += f" ({raus[p['name']]})"
+            namen.append(n)
+        teile.append(", ".join(namen))
+    return " – ".join(teile)
+
+
+def fotmob():
+    spiele = {}
+    for lid in FOTMOB_LIGEN:
+        L = json.loads(get(f"https://www.fotmob.com/api/data/leagues?id={lid}"))
+        for m in (L.get("fixtures", {}) or {}).get("allMatches", []) or []:
+            if "rostock" in norm(m.get("home", {}).get("name", "")):
+                utc = (m.get("status") or {}).get("utcTime") or ""
+                if utc:
+                    d = dt.datetime.fromisoformat(utc.replace("Z", "+00:00")).astimezone(dt.timezone(dt.timedelta(hours=1))).date().isoformat()
+                    spiele[d] = m
+    for g in HEIM:
+        m = spiele.get(g["start"])
+        if not m or not (m.get("status") or {}).get("finished"):
+            continue
+        s = slot(g)
+        if s.get("fotmob") == m["id"] and not relevant(g, 0, 3):
+            continue  # schon fertig eingelesen; in den Tagen nach dem Spiel trotzdem nachschauen
+        md = json.loads(get(f"https://www.fotmob.com/api/data/matchDetails?matchId={m['id']}"))
+        mf = md.get("content", {}).get("matchFacts", {}) or {}
+        karten = []
+        for e in (mf.get("events", {}) or {}).get("events", []):
+            if e.get("type") == "Card":
+                art = {"Yellow": None, "YellowRed": "gr", "Red": "r"}.get(e.get("card"), None)
+                name = e.get("lastName") or e.get("nameStr") or ((e.get("player") or {}).get("name") or "").split()[-1]
+                k = ["H" if e.get("isHome") else "A", name, fotmob_min(e)]
+                if art:
+                    k.append(art)
+                karten.append(k)
+        s["karten"] = karten
+        ib = mf.get("infoBox", {}) or {}
+        ref = (ib.get("Referee") or {}).get("text")
+        if ref:
+            s["schiri"] = ref
+        att = ib.get("Attendance")
+        if att and not s.get("zus"):
+            s["zus"] = f"{int(att):,}".replace(",", ".")
+        xi = fotmob_aufstellung(md)
+        if xi and not s.get("xi"):
+            s["xi"] = xi
+        s["fotmob"] = m["id"]
+
+
 # ---------------------------------------------------------------- Ablauf
 step("fch.de News", fch_news)
 step("Berichte", berichte)
@@ -341,6 +419,7 @@ step("YouTube", youtube)
 step("ARD", ard)
 step("Kogge", kogge)
 step("Ticketshop", shop)
+step("FotMob", fotmob)
 
 MED["fehler"] = FEHLER
 neu = json.dumps(MED, ensure_ascii=False, indent=1, sort_keys=True)
