@@ -2,53 +2,260 @@
  "fehler": [],
  "spiele": {
   "2026-08-16": {
+   "fotmob": "5905860",
+   "karten": [
+    [
+     "H",
+     "Dirkner",
+     "51."
+    ],
+    [
+     "A",
+     "Klünter",
+     "56."
+    ],
+    [
+     "A",
+     "Thalhammer",
+     "66."
+    ],
+    [
+     "A",
+     "Gregório",
+     "72."
+    ],
+    [
+     "A",
+     "Asallari",
+     "77."
+    ],
+    [
+     "H",
+     "Michaelis",
+     "79."
+    ],
+    [
+     "A",
+     "Mickels",
+     "89."
+    ],
+    [
+     "A",
+     "Rieckmann",
+     "90.+2"
+    ]
+   ],
    "kogge": {
     "nr": 1,
     "url": "https://www.fch.de/files/kogge/2026-2027-01.pdf"
    },
-   "opp": "SV Waldhof Mannheim"
+   "opp": "SV Waldhof Mannheim",
+   "schiri": "Felix Weller",
+   "xi": "Unbehaun – Bohnert, Carstens, Wallner, Kölle – Dirkner (61. Dajaku), Schuster – Lennemann (86. Karada), Krauß (61. Michaelis), Brzozowski (61. Dietze) – Voglsammer (83. Hummel)",
+   "zus": "25.554"
   },
   "2026-08-21": {
+   "fotmob": "5750697",
+   "karten": [],
    "kogge": {
     "nr": 2,
     "url": "https://www.fch.de/files/kogge/2026-2027-02.pdf"
    },
-   "opp": "VfB Stuttgart"
+   "opp": "VfB Stuttgart",
+   "schiri": "Sascha Stegemann",
+   "xi": "Unbehaun – Pfanne, Gürleyen, Carstens – Bohnert, Kölle – Michaelis, Fatkić, Dietze, Dajaku – Voglsammer",
+   "zus": "27.453"
   },
   "2026-09-05": {
+   "fotmob": "5905880",
+   "karten": [
+    [
+     "H",
+     "Bohnert",
+     "42."
+    ],
+    [
+     "H",
+     "Dajaku",
+     "49."
+    ],
+    [
+     "H",
+     "Carstens",
+     "74."
+    ],
+    [
+     "A",
+     "Greilinger",
+     "76."
+    ],
+    [
+     "A",
+     "Stehle",
+     "90.+1"
+    ],
+    [
+     "H",
+     "Kiedl",
+     "90.+2"
+    ]
+   ],
    "kogge": {
     "nr": 3,
     "url": "https://www.fch.de/files/kogge/2026-2027-03.pdf"
    },
-   "opp": "SV Wehen Wiesbaden"
+   "opp": "SV Wehen Wiesbaden",
+   "schiri": "Jonah Besong",
+   "xi": "Unbehaun – Bohnert (74. Kiedl), Carstens, Wallner, Kölle – Fatkić, Dirkner (62. Schuster) – Krauß (87. Lennemann), Kopacz (87. Dietze), Dajaku – Voglsammer (74. Karada)",
+   "zus": "25.447"
   },
   "2026-09-16": {
+   "fotmob": "5905901",
+   "karten": [
+    [
+     "A",
+     "Lüers",
+     "32."
+    ],
+    [
+     "H",
+     "Kölle",
+     "71."
+    ]
+   ],
    "kogge": {
     "nr": 4,
     "url": "https://www.fch.de/files/kogge/2026-2027-04.pdf"
    },
-   "opp": "VfB Stuttgart II"
+   "opp": "VfB Stuttgart II",
+   "schiri": "Leonidas Exuzidis",
+   "xi": "Unbehaun – Bohnert, Gürleyen, Carstens, Kölle – Schuster, Fatkić – Lennemann (59. Michaelis), Kopacz (69. Dietze), Dajaku (85. Krauß) – Voglsammer (69. Kiedl)",
+   "zus": "22.580"
   },
   "2026-10-13": {
+   "fotmob": "5905928",
+   "karten": [
+    [
+     "H",
+     "Gürleyen",
+     "2."
+    ],
+    [
+     "A",
+     "Prasse",
+     "18."
+    ],
+    [
+     "A",
+     "Sprekelmeyer",
+     "29."
+    ],
+    [
+     "A",
+     "Fedl",
+     "29."
+    ],
+    [
+     "A",
+     "Touglo",
+     "67."
+    ],
+    [
+     "H",
+     "Karada",
+     "81."
+    ],
+    [
+     "H",
+     "Holten",
+     "90."
+    ]
+   ],
    "kogge": {
     "nr": 5,
     "url": "https://www.fch.de/files/kogge/2026-2027-05.pdf"
    },
-   "opp": "SV Meppen"
+   "opp": "SV Meppen",
+   "schiri": "Martin Wilke",
+   "xi": "Unbehaun – Karada, Gürleyen, Carstens, Kölle (79. Brzozowski) – Schuster (79. Dirkner), Fatkić – Kopacz (59. Krauß), Dietze (59. Holten), Dajaku (69. Michaelis) – Voglsammer",
+   "zus": "24.385"
   },
   "2026-10-24": {
+   "fotmob": "5905948",
+   "karten": [
+    [
+     "A",
+     "Oberdorf",
+     "61."
+    ],
+    [
+     "A",
+     "Bornschein",
+     "63."
+    ],
+    [
+     "H",
+     "Dietze",
+     "70."
+    ],
+    [
+     "H",
+     "Wallner",
+     "71."
+    ]
+   ],
    "kogge": {
     "nr": 6,
     "url": "https://www.fch.de/files/kogge/2026-2027-06.pdf"
    },
-   "opp": "Fortuna Düsseldorf"
+   "opp": "Fortuna Düsseldorf",
+   "schiri": "Lars Erbst",
+   "xi": "Klewin – Carstens, Pfanne, Wallner (75. Krauß) – Karada, Fatkić, Schuster, Kölle – Michaelis (66. Dietze), Voglsammer (85. Kiedl), Dajaku (85. Bock)",
+   "zus": "25.762"
   },
   "2026-11-07": {
+   "fotmob": "5905968",
+   "karten": [
+    [
+     "A",
+     "Maier",
+     "48."
+    ],
+    [
+     "A",
+     "Celiktas",
+     "56."
+    ],
+    [
+     "A",
+     "Celiktas",
+     "62.",
+     "gr"
+    ],
+    [
+     "H",
+     "Wallner",
+     "75."
+    ],
+    [
+     "A",
+     "Eisele",
+     "86."
+    ],
+    [
+     "A",
+     "Molinari",
+     "88."
+    ]
+   ],
    "kogge": {
     "nr": 7,
     "url": "https://www.fch.de/files/kogge/2026-2027-07.pdf"
    },
-   "opp": "SG Sonnenhof Großaspach"
+   "opp": "SG Sonnenhof Großaspach",
+   "schiri": "Lennart Kernchen",
+   "xi": "Klewin – Carstens, Pfanne, Wallner – Karada (84. Bohnert), Schuster (89. Michaelis), Dirkner, Kölle (46. Brzozowski) – Kopacz (46. Krauß), Fatkić – Voglsammer (84. Lennemann)",
+   "zus": "22.930"
   },
   "2026-11-27": {
    "opp": "TSV Havelse",
@@ -73,5 +280,5 @@
    }
   }
  },
- "stand": "2026-11-18T17:52Z"
+ "stand": "2026-11-18T18:20Z"
 }
