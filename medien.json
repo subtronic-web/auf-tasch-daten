@@ -1,0 +1,77 @@
+{
+ "fehler": [],
+ "spiele": {
+  "2026-08-16": {
+   "kogge": {
+    "nr": 1,
+    "url": "https://www.fch.de/files/kogge/2026-2027-01.pdf"
+   },
+   "opp": "SV Waldhof Mannheim"
+  },
+  "2026-08-21": {
+   "kogge": {
+    "nr": 2,
+    "url": "https://www.fch.de/files/kogge/2026-2027-02.pdf"
+   },
+   "opp": "VfB Stuttgart"
+  },
+  "2026-09-05": {
+   "kogge": {
+    "nr": 3,
+    "url": "https://www.fch.de/files/kogge/2026-2027-03.pdf"
+   },
+   "opp": "SV Wehen Wiesbaden"
+  },
+  "2026-09-16": {
+   "kogge": {
+    "nr": 4,
+    "url": "https://www.fch.de/files/kogge/2026-2027-04.pdf"
+   },
+   "opp": "VfB Stuttgart II"
+  },
+  "2026-10-13": {
+   "kogge": {
+    "nr": 5,
+    "url": "https://www.fch.de/files/kogge/2026-2027-05.pdf"
+   },
+   "opp": "SV Meppen"
+  },
+  "2026-10-24": {
+   "kogge": {
+    "nr": 6,
+    "url": "https://www.fch.de/files/kogge/2026-2027-06.pdf"
+   },
+   "opp": "Fortuna Düsseldorf"
+  },
+  "2026-11-07": {
+   "kogge": {
+    "nr": 7,
+    "url": "https://www.fch.de/files/kogge/2026-2027-07.pdf"
+   },
+   "opp": "SG Sonnenhof Großaspach"
+  },
+  "2026-11-27": {
+   "opp": "TSV Havelse",
+   "shop": "https://tickets.fc-hansa.de/shops/103/events/2399"
+  },
+  "2026-12-13": {
+   "opp": "SC Verl",
+   "shop": "https://tickets.fc-hansa.de/shops/103/events/2400",
+   "vvk": {
+    "free": "2026-11-13",
+    "mem": "2026-11-11",
+    "url": "https://www.fch.de/news/ticket-infos-fuer-die-heimspiele-gegen-verl-muenster.html"
+   }
+  },
+  "2026-12-19": {
+   "opp": "SC Preußen Münster",
+   "shop": "https://tickets.fc-hansa.de/shops/103/events/2401",
+   "vvk": {
+    "free": "2026-11-13",
+    "mem": "2026-11-11",
+    "url": "https://www.fch.de/news/ticket-infos-fuer-die-heimspiele-gegen-verl-muenster.html"
+   }
+  }
+ },
+ "stand": "2026-11-18T17:52Z"
+}

@@ -1,30 +1,31 @@
 {
-  "aktualisiert": "2026-11-17",
+  "aktualisiert": "2026-11-18",
   "news": [
+    {
+      "titel": "Fan-Infos fürs Auswärtsspiel in Duisburg",
+      "datum": "2026-11-18",
+      "kategorie": "Fan-Infos",
+      "url": "https://www.fch.de/news/fan-infos-fuers-auswaertsspiel-in-duisburg.html"
+    },
     {
       "titel": "Ticket-Infos fürs Auswärtsspiel bei Fortuna Köln",
       "datum": "2026-11-16",
       "kategorie": "Tickets",
-      "kurz": "Sa 05.12.2026, 14:00 Uhr, Südstadion Köln · Mitglieder ab Di 17.11. 15:00 · frei ab Do 19.11. 15:00 · Steh 15 €, Sitz 29 € · nur online",
-      "url": "https://www.fch.de/news/ticket-infos-fuer-das-auswaertsspiel-bei-fortuna-koeln.html"
+      "url": "https://www.fch.de/news/ticket-infos-fuer-das-auswaertsspiel-bei-fortuna-koeln.html",
+      "kurz": "Zum letzten Auswärtsspiel in diesem Jahr gehts für uns am 05.12.2026 (Sonnabend) zu Fortuna Köln"
     },
     {
-      "titel": "10:0 in Penzlin – FCH zieht ins Pokal-Viertelfinale ein",
+      "titel": "10:0 in Penzlin - FCH zieht ins Pokal-Viertelfinale ein",
       "datum": "2026-11-14",
       "kategorie": "Spiel",
       "url": "https://www.fch.de/news/100-in-penzlin-fch-zieht-ins-pokal-viertelfinale-ein.html"
     },
     {
-      "titel": "Spielplan: Die nächsten Hansa-Termine stehen",
-      "datum": "2026-11-12",
-      "kategorie": "Spielplan",
-      "url": "https://www.fch.de/news/spielplan-die-naechsten-hansa-termine-stehen.html"
-    },
-    {
       "titel": "Ticket-Infos für die Heimspiele gegen Verl & Münster",
       "datum": "2026-11-10",
       "kategorie": "Tickets",
-      "url": "https://www.fch.de/news/ticket-infos-fuer-die-heimspiele-gegen-verl-muenster.html"
+      "url": "https://www.fch.de/news/ticket-infos-fuer-die-heimspiele-gegen-verl-muenster.html",
+      "kurz": "Mitglieder ab Mi 11.11. · freier Verkauf ab Fr 13.11."
     }
   ]
 }
