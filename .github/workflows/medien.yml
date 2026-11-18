@@ -1,0 +1,28 @@
+name: Medien und News aktualisieren
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: daten-schreiben
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Quellen abfragen, medien.json und news.json bauen
+        run: python3 scripts/build_medien.py spielplan.json medien.json news.json
+      - name: Änderung speichern
+        run: |
+          if [ -n "$(git status --porcelain medien.json news.json)" ]; then
+            git config user.name "medien-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add medien.json news.json
+            git commit -m "Medien und News aktualisiert"
+            git pull --rebase origin main
+            git push
+          fi

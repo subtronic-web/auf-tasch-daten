@@ -5,6 +5,9 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+concurrency:
+  group: daten-schreiben
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,5 +24,6 @@ jobs:
             git config user.email "bot@users.noreply.github.com"
             git add spielplan.json
             git commit -m "Spielplan aktualisiert"
+            git pull --rebase origin main
             git push
           fi
