@@ -1,0 +1,27 @@
+name: Push-Mitteilungen verschicken
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: read
+concurrency:
+  group: push
+  cancel-in-progress: false
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/push_requirements.txt
+      - name: Bausteine laden
+        run: pip install -q -r scripts/push_requirements.txt
+      - name: Neues raussuchen und verschicken
+        env:
+          FIREBASE_SA: ${{ secrets.FIREBASE_SA }}
+        run: python3 scripts/push_bot.py
