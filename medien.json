@@ -1,5 +1,8 @@
 {
- "fehler": [],
+ "fehler": [
+  "fch.de News: URLError: <urlopen error [Errno 101] Network is unreachable>",
+  "Kogge: URLError: <urlopen error [Errno 101] Network is unreachable>"
+ ],
  "spiele": {
   "2026-08-16": {
    "fotmob": "5905860",
@@ -280,5 +283,5 @@
    }
   }
  },
- "stand": "2026-11-18T18:20Z"
+ "stand": "2026-11-19T19:43Z"
 }
