@@ -162,7 +162,12 @@ def kategorie(n):
         return "Fan-Infos"
     if re.search(r"\b\d{1,2}:\d{1,2}\b", n["titel"]) or "heimspiel" in t or "gegen" in t or "punkt" in t or "sieg" in t:
         return "Spiel"
-    return ""
+    # seit 20.11.2026: alle Profi-News in die App (Wunsch David), nur Frauen/Nachwuchs/Historie/Aktionen raus
+    if re.search(r"gewinnspiel|verlosung|fanshop|rabatt|gutschein", t):
+        return ""
+    if re.search(r"ansetzung|terminier|spielplan|anstosszeit", t):
+        return "Spielplan"
+    return "Verein"
 
 
 def berichte():
@@ -432,7 +437,7 @@ if alt != json.dumps({**MED, "stand": None}, ensure_ascii=False, indent=1, sort_
     MED["stand"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     json.dump(MED, open(medien_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1, sort_keys=True)
 
-# news.json im bisherigen Format (die App zeigt die 3 neuesten)
+# news.json (App: Wisch-Leiste „Hansa News“ mit den letzten 10, Ticket-News separat)
 if NEWS:
     wahl = []
     for n in NEWS:
@@ -448,7 +453,7 @@ if NEWS:
             else:
                 e["kurz"] = re.sub(r"\s*\.*\s*News lesen.*$", "", n["teaser"])[:160]
         wahl.append(e)
-        if len(wahl) >= 8:
+        if len(wahl) >= 14:  # App zeigt die letzten 10 (ohne Ticket-News, die stehen bei Tickets & Vorverkauf)
             break
     try:
         alt_news = json.load(open(news_path, encoding="utf-8")).get("news")
