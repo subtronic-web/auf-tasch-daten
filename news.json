@@ -1,6 +1,24 @@
 {
-  "aktualisiert": "2026-11-18",
+  "aktualisiert": "2026-11-20",
   "news": [
+    {
+      "titel": "Hansa \"Blue Week\": Bis zu 40 % sparen!",
+      "datum": "2026-11-20",
+      "kategorie": "Verein",
+      "url": "https://www.fch.de/news/hansa-blue-week-bis-zu-40-sparen.html"
+    },
+    {
+      "titel": "FCH will beim Tabellenzweiten MSV Duisburg nachlegen!",
+      "datum": "2026-11-20",
+      "kategorie": "Verein",
+      "url": "https://www.fch.de/news/fch-will-beim-tabellenzweiten-duisburg-nachlegen.html"
+    },
+    {
+      "titel": "Jetzt Tickets für \"Hansa tischt auf\" sichern",
+      "datum": "2026-11-19",
+      "kategorie": "Verein",
+      "url": "https://www.fch.de/news/jetzt-tickets-fuer-hansa-tischt-auf-sichern.html"
+    },
     {
       "titel": "Fan-Infos fürs Auswärtsspiel in Duisburg",
       "datum": "2026-11-18",
@@ -21,11 +39,29 @@
       "url": "https://www.fch.de/news/100-in-penzlin-fch-zieht-ins-pokal-viertelfinale-ein.html"
     },
     {
+      "titel": "Mit dem Mannschaftsbus ins Ostseestadion: SLT beim Kabinentalk",
+      "datum": "2026-11-13",
+      "kategorie": "Verein",
+      "url": "https://www.fch.de/news/hauptpartner-slt-zu-gast-beim-fch.html"
+    },
+    {
+      "titel": "Spielplan: Die nächsten Hansa-Termine stehen!",
+      "datum": "2026-11-12",
+      "kategorie": "Spielplan",
+      "url": "https://www.fch.de/news/spielplan-die-naechsten-hansa-termine-stehen.html"
+    },
+    {
       "titel": "Ticket-Infos für die Heimspiele gegen Verl & Münster",
       "datum": "2026-11-10",
       "kategorie": "Tickets",
       "url": "https://www.fch.de/news/ticket-infos-fuer-die-heimspiele-gegen-verl-muenster.html",
       "kurz": "Mitglieder ab Mi 11.11. · freier Verkauf ab Fr 13.11."
+    },
+    {
+      "titel": "Bagaluten-Buch: Lesung im Warnow Park",
+      "datum": "2026-11-09",
+      "kategorie": "Verein",
+      "url": "https://www.fch.de/news/bagaluten-buch-lesung-im-fch-fanshop-im-warnowpark.html"
     }
   ]
 }
