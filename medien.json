@@ -1,5 +1,7 @@
 {
- "fehler": [],
+ "fehler": [
+  "Ticketshop: HTTPError: HTTP Error 503: Service Unavailable"
+ ],
  "spiele": {
   "2026-08-16": {
    "fotmob": "5905860",
@@ -280,5 +282,5 @@
    }
   }
  },
- "stand": "2026-11-19T20:34Z"
+ "stand": "2026-11-20T00:35Z"
 }
