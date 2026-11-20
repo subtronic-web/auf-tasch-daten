@@ -111,10 +111,10 @@ def sende(sub, payload, priv):
         return "fehler"
 
 
-def mitteilungen(rows, badge):
+def mitteilungen(rows, badge, leise=False):
     def eine(r, tag):
         p = {"title": r["t"], "body": r["s"], "tag": tag, "badge": badge,
-             "keys": r["keys"], "chat": r["chat"]}
+             "keys": r["keys"], "chat": r["chat"], "silent": leise}
         if r["url"]:
             p["url"] = r["url"]
         else:
@@ -126,7 +126,7 @@ def mitteilungen(rows, badge):
     n = sum(r["n"] for r in rows)
     return [{"title": f"Auf Tasch: {n} Neuigkeiten", "tag": "sammel", "badge": badge,
              "body": " · ".join(r["t"] for r in rows[:4]) + (" …" if len(rows) > 4 else ""),
-             "keys": [k for r in rows for k in r["keys"]], "act": "nav", "a": "start", "b": None}]
+             "keys": [k for r in rows for k in r["keys"]], "act": "nav", "a": "start", "b": None, "silent": leise}]
 
 
 def nachtruhe(nset, jetzt):
@@ -194,7 +194,7 @@ def lauf(q, sender=sende, jetzt=None):
                 bericht[sid] = "nacht"
                 continue
             ergebnis = "ok"
-            for m in mitteilungen(rows, res["badge"]):
+            for m in mitteilungen(rows, res["badge"], bool((s.get("nset") or {}).get("leise"))):
                 ergebnis = sender(s["sub"], m, priv)
                 if ergebnis != "ok":
                     break
