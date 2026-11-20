@@ -163,7 +163,7 @@ def kategorie(n):
     if re.search(r"\b\d{1,2}:\d{1,2}\b", n["titel"]) or "heimspiel" in t or "gegen" in t or "punkt" in t or "sieg" in t:
         return "Spiel"
     # seit 20.11.2026: alle Profi-News in die App (Wunsch David), nur Frauen/Nachwuchs/Historie/Aktionen raus
-    if re.search(r"gewinnspiel|verlosung|fanshop|rabatt|gutschein", t):
+    if re.search(r"gewinnspiel|verlosung|fanshop|rabatt|gutschein|sparen|\bsale\b|\d+ ?%", t):
         return ""
     if re.search(r"ansetzung|terminier|spielplan|anstosszeit", t):
         return "Spielplan"
