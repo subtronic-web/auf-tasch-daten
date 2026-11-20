@@ -1,5 +1,7 @@
 {
  "fehler": [
+  "fch.de News: URLError: <urlopen error [Errno 101] Network is unreachable>",
+  "Kogge: URLError: <urlopen error [Errno 101] Network is unreachable>",
   "Ticketshop: HTTPError: HTTP Error 503: Service Unavailable"
  ],
  "spiele": {
@@ -282,5 +284,5 @@
    }
   }
  },
- "stand": "2026-11-20T00:35Z"
+ "stand": "2026-11-20T02:41Z"
 }
