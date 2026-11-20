@@ -2,7 +2,12 @@ name: Push-Mitteilungen verschicken
 on:
   schedule:
     - cron: "*/5 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      test_an:
+        description: "Nur Test-Mitteilung an diese Person schicken (Name, leer = normaler Lauf)"
+        required: false
+        default: ""
 permissions:
   contents: read
 concurrency:
@@ -24,4 +29,5 @@ jobs:
       - name: Neues raussuchen und verschicken
         env:
           FIREBASE_SA: ${{ secrets.FIREBASE_SA }}
+          TESTPUSH: ${{ github.event.inputs.test_an }}
         run: python3 scripts/push_bot.py

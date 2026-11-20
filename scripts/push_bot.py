@@ -220,6 +220,27 @@ def lauf(q, sender=sende, jetzt=None):
     return bericht
 
 
+def testpush(q, name, sender=sende):
+    """Einmalige Test-Mitteilung an alle Handys der Person `name` (ignoriert Nachtruhe, ändert keinen Stand)."""
+    priv, pub = vapid(q)
+    users = q.all("users")
+    n = 0
+    for sid, s in q.all("push").items():
+        u = users.get(s.get("uid", ""), {})
+        if name.lower() not in (u.get("name", "") or "").lower():
+            continue
+        m = {"title": "Auf Tasch: Test", "body": "Wenn du das liest, klappt Push. Die Zahl am App-Symbol sollte 1 zeigen.",
+             "tag": "test", "badge": 1, "keys": [], "chat": None, "act": "nav", "a": "start", "b": None}
+        e = sender(s["sub"], m, priv)
+        log(f"Test an {u.get('name', '?')} ({sid}): {e}")
+        n += 1
+    if not n:
+        log(f"Kein angemeldetes Handy für „{name}“ gefunden.")
+
+
 if __name__ == "__main__":
     quelle = DateiQuelle(sys.argv[1]) if len(sys.argv) > 1 else FirestoreQuelle()
-    lauf(quelle)
+    if os.environ.get("TESTPUSH", "").strip():
+        testpush(quelle, os.environ["TESTPUSH"].strip())
+    else:
+        lauf(quelle)
