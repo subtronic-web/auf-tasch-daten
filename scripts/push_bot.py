@@ -143,7 +143,12 @@ def lauf(q, sender=sende, jetzt=None):
         log("Noch kein Handy für Push angemeldet.")
         return {}
     users = q.all("users")
-    daten = {"app": q.get("tasch", "app") or {}, "karten": q.all("karten"), "zusatz": q.all("zusatz")}
+    daten = {
+        "app": q.get("tasch", "app") or {},
+        "karten": q.all("karten"),
+        "zusatz": q.all("zusatz"),
+        "chatMessages": q.all("chatMessages"),
+    }
     from playwright.sync_api import sync_playwright
     bericht = {}
     with sync_playwright() as p:
