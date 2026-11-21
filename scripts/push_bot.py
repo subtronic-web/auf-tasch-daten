@@ -148,6 +148,9 @@ def lauf(q, sender=sende, jetzt=None):
         "karten": q.all("karten"),
         "zusatz": q.all("zusatz"),
         "chatMessages": q.all("chatMessages"),
+        "travelPlans": q.all("travelPlans"),
+        "travelOffers": q.all("travelOffers"),
+        "travelCutovers": q.all("travelCutovers"),
     }
     from playwright.sync_api import sync_playwright
     bericht = {}
