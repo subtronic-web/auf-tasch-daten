@@ -1,7 +1,5 @@
 {
- "fehler": [
-  "Vorverkauf: URLError: <urlopen error [Errno 101] Network is unreachable>"
- ],
+ "fehler": [],
  "spiele": {
   "2026-08-16": {
    "fotmob": "5905860",
@@ -282,5 +280,5 @@
    }
   }
  },
- "stand": "2026-11-21T05:22Z"
+ "stand": "2026-11-21T06:19Z"
 }
