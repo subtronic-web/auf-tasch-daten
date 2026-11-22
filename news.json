@@ -1,6 +1,12 @@
 {
-  "aktualisiert": "2026-11-21",
+  "aktualisiert": "2026-11-22",
   "news": [
+    {
+      "titel": "Trotz guter Leistung – FCH unterliegt in Duisburg mit 0:2",
+      "datum": "2026-11-22",
+      "kategorie": "Spiel",
+      "url": "https://www.fch.de/news/trotz-guter-leistung-fch-unterliegt-in-duisburg-mit-02.html"
+    },
     {
       "titel": "FCH will beim Tabellenzweiten MSV Duisburg nachlegen!",
       "datum": "2026-11-20",
@@ -50,12 +56,6 @@
       "kategorie": "Tickets",
       "url": "https://www.fch.de/news/ticket-infos-fuer-die-heimspiele-gegen-verl-muenster.html",
       "kurz": "Mitglieder ab Mi 11.11. · freier Verkauf ab Fr 13.11."
-    },
-    {
-      "titel": "Bagaluten-Buch: Lesung im Warnow Park",
-      "datum": "2026-11-09",
-      "kategorie": "Verein",
-      "url": "https://www.fch.de/news/bagaluten-buch-lesung-im-fch-fanshop-im-warnowpark.html"
     }
   ]
 }
