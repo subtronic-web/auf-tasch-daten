@@ -1,8 +1,5 @@
 {
- "fehler": [
-  "fch.de News: URLError: <urlopen error [Errno 101] Network is unreachable>",
-  "Kogge: URLError: <urlopen error [Errno 101] Network is unreachable>"
- ],
+ "fehler": [],
  "spiele": {
   "2026-08-16": {
    "fotmob": "5905860",
@@ -263,7 +260,11 @@
   "2026-11-27": {
    "opp": "TSV Havelse",
    "pkVor": "oax_5FxG74c",
-   "shop": "https://tickets.fc-hansa.de/shops/103/events/2399"
+   "shop": "https://tickets.fc-hansa.de/shops/103/events/2399",
+   "vorbericht": {
+    "titel": "FCH WILL GEGEN HAVELSE DEN ZWEITEN HEIMSIEG IN FOLGE!",
+    "url": "https://www.fch.de/news/fch-will-gegen-havelse-den-zweiten-heimsieg-in-folge.html"
+   }
   },
   "2026-12-13": {
    "opp": "SC Verl",
@@ -284,5 +285,5 @@
    }
   }
  },
- "stand": "2026-11-25T15:51Z"
+ "stand": "2026-11-25T16:53Z"
 }

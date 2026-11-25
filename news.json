@@ -2,6 +2,18 @@
   "aktualisiert": "2026-11-25",
   "news": [
     {
+      "titel": "FCH will gegen Havelse den zweiten Heimsieg in Folge!",
+      "datum": "2026-11-25",
+      "kategorie": "Spiel",
+      "url": "https://www.fch.de/news/fch-will-gegen-havelse-den-zweiten-heimsieg-in-folge.html"
+    },
+    {
+      "titel": "Kompassmodell im Faktencheck: Was ist dran an den Reform-Ängsten?",
+      "datum": "2026-11-25",
+      "kategorie": "Verein",
+      "url": "https://www.fch.de/news/kompass-modell-im-faktencheck.html"
+    },
+    {
       "titel": "Gemeinsam gewachsen. Gemeinsam in die Zukunft: F.C. Hansa und w.Holz setzen Zusammenarbeit fort",
       "datum": "2026-11-25",
       "kategorie": "Verein",
@@ -36,13 +48,6 @@
       "datum": "2026-11-18",
       "kategorie": "Fan-Infos",
       "url": "https://www.fch.de/news/fan-infos-fuers-auswaertsspiel-in-duisburg.html"
-    },
-    {
-      "titel": "Ticket-Infos fürs Auswärtsspiel bei Fortuna Köln",
-      "datum": "2026-11-16",
-      "kategorie": "Tickets",
-      "url": "https://www.fch.de/news/ticket-infos-fuer-das-auswaertsspiel-bei-fortuna-koeln.html",
-      "kurz": "Zum letzten Auswärtsspiel in diesem Jahr gehts für uns am 05.12.2026 (Sonnabend) zu Fortuna Köln"
     }
   ]
 }
