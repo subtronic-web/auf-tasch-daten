@@ -1,6 +1,6 @@
 {
  "fehler": [
-  "YouTube Sky Sport: HTTP Error 503: Service Unavailable"
+  "YouTube: HTTPError: HTTP Error 503: Service Unavailable"
  ],
  "spiele": {
   "2026-08-16": {
@@ -287,5 +287,5 @@
    }
   }
  },
- "stand": "2026-11-27T05:50Z"
+ "stand": "2026-11-27T06:54Z"
 }
