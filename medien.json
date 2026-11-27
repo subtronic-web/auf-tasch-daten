@@ -258,17 +258,38 @@
    "zus": "22.930"
   },
   "2026-11-27": {
+   "fotmob": "5905989",
+   "highlights": [
+    {
+     "name": "MAGENTA SPORT",
+     "url": "https://www.youtube.com/watch?v=AD1bolNSCus"
+    }
+   ],
+   "karten": [
+    [
+     "A",
+     "Wardak",
+     "61."
+    ],
+    [
+     "A",
+     "Paldino",
+     "79."
+    ]
+   ],
    "kogge": {
     "nr": 8,
     "url": "https://www.fch.de/files/kogge/2026-2027-08.pdf"
    },
    "opp": "TSV Havelse",
    "pkVor": "oax_5FxG74c",
+   "schiri": "Simon Schreiner",
    "shop": "https://tickets.fc-hansa.de/shops/103/events/2399",
    "vorbericht": {
     "titel": "FCH WILL GEGEN HAVELSE DEN ZWEITEN HEIMSIEG IN FOLGE!",
     "url": "https://www.fch.de/news/fch-will-gegen-havelse-den-zweiten-heimsieg-in-folge.html"
-   }
+   },
+   "xi": "Klewin – Karada, Carstens, Pfanne, Kölle – Dietze (80. Schuster), Fatkić, Dirkner (78. Michaelis) – Kopacz (90. Brzozowski), Voglsammer (82. Kiedl), Dajaku (82. Krauß)"
   },
   "2026-12-13": {
    "opp": "SC Verl",
@@ -289,5 +310,5 @@
    }
   }
  },
- "stand": "2026-11-27T12:40Z"
+ "stand": "2026-11-27T20:31Z"
 }
