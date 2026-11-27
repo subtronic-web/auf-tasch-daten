@@ -1,6 +1,12 @@
 {
-  "aktualisiert": "2026-11-26",
+  "aktualisiert": "2026-11-27",
   "news": [
+    {
+      "titel": "FCH fährt souveränen Sieg gegen Havelse ein",
+      "datum": "2026-11-27",
+      "kategorie": "Spiel",
+      "url": "https://www.fch.de/news/fch-faehrt-souveraenen-sieg-gegen-havelse-ein.html"
+    },
     {
       "titel": "Quattroball zum Orange Day - 1.000 Menschen waren dabei",
       "datum": "2026-11-26",
@@ -54,12 +60,6 @@
       "datum": "2026-11-19",
       "kategorie": "Verein",
       "url": "https://www.fch.de/news/jetzt-tickets-fuer-hansa-tischt-auf-sichern.html"
-    },
-    {
-      "titel": "Fan-Infos fürs Auswärtsspiel in Duisburg",
-      "datum": "2026-11-18",
-      "kategorie": "Fan-Infos",
-      "url": "https://www.fch.de/news/fan-infos-fuers-auswaertsspiel-in-duisburg.html"
     }
   ]
 }
