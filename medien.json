@@ -258,6 +258,10 @@
    "zus": "22.930"
   },
   "2026-11-27": {
+   "kogge": {
+    "nr": 8,
+    "url": "https://www.fch.de/files/kogge/2026-2027-08.pdf"
+   },
    "opp": "TSV Havelse",
    "pkVor": "oax_5FxG74c",
    "shop": "https://tickets.fc-hansa.de/shops/103/events/2399",
@@ -285,5 +289,5 @@
    }
   }
  },
- "stand": "2026-11-27T08:19Z"
+ "stand": "2026-11-27T12:40Z"
 }
