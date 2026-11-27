@@ -1,7 +1,5 @@
 {
- "fehler": [
-  "YouTube: HTTPError: HTTP Error 503: Service Unavailable"
- ],
+ "fehler": [],
  "spiele": {
   "2026-08-16": {
    "fotmob": "5905860",
@@ -287,5 +285,5 @@
    }
   }
  },
- "stand": "2026-11-27T06:54Z"
+ "stand": "2026-11-27T08:19Z"
 }
