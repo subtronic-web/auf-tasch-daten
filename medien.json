@@ -261,8 +261,16 @@
    "fotmob": "5905989",
    "highlights": [
     {
+     "name": "Sportschau / ARD",
+     "url": "https://www.ardmediathek.de/video/Y3JpZDovL3Nwb3J0c2NoYXUuZGUvOTMyYTE4ZGItN2IxMC00NzY5LWIwMmQtNzU4NzFmNGUzZDQ5"
+    },
+    {
      "name": "MAGENTA SPORT",
      "url": "https://www.youtube.com/watch?v=AD1bolNSCus"
+    },
+    {
+     "name": "Sky Sport",
+     "url": "https://www.youtube.com/watch?v=FL4R5FhOrZA"
     }
    ],
    "karten": [
@@ -311,5 +319,5 @@
    }
   }
  },
- "stand": "2026-11-27T21:34Z"
+ "stand": "2026-11-27T23:30Z"
 }
