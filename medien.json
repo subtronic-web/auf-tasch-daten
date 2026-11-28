@@ -261,6 +261,10 @@
    "fotmob": "5905989",
    "highlights": [
     {
+     "name": "NDR / Nordmagazin",
+     "url": "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9iNDY4NGEzNS1lNThkLTRkNDAtOGVjMi03ZDdkNzIzMGQ4NjY"
+    },
+    {
      "name": "Sportschau / ARD",
      "url": "https://www.ardmediathek.de/video/Y3JpZDovL3Nwb3J0c2NoYXUuZGUvOTMyYTE4ZGItN2IxMC00NzY5LWIwMmQtNzU4NzFmNGUzZDQ5"
     },
@@ -319,5 +323,5 @@
    }
   }
  },
- "stand": "2026-11-28T08:40Z"
+ "stand": "2026-11-28T19:42Z"
 }
